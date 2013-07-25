@@ -80,16 +80,24 @@ class Sphinxsearch
      *
      * @param int $mode The matching mode to be used.
      * 
+     * 
      * @return null
      */
     public function setMatchMode($mode)
     {
         $this->_sphinx->setMatchMode($mode);
     }
+
+
+    public function setRankingMode($ranker, $rankexpr="")
+    {
+            $this->_sphinx->setRankingMode($ranker, $rankexpr);
+    }
     /**
      * Set the desired sort mode.
      *
-     * @param int $mode The matching mode to be used.
+     * @param int    $mode   The matching mode to be used.
+     * @param string $sortby field name to sort default empty string
      * 
      * @return null
      */
