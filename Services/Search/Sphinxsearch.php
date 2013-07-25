@@ -87,15 +87,15 @@ class Sphinxsearch
         $this->_sphinx->setMatchMode($mode);
     }
     /**
-     * Set the desired match mode.
+     * Set the desired sort mode.
      *
      * @param int $mode The matching mode to be used.
      * 
      * @return null
      */
-    public function setSortMode($mode)
+    public function setSortMode($mode, $sortby="")
     {
-        $this->_sphinx->setSortMode($mode);
+        $this->_sphinx->setSortMode($mode, $sortby);
     }
 
     /**
