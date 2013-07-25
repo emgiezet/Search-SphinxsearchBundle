@@ -86,6 +86,17 @@ class Sphinxsearch
     {
         $this->_sphinx->setMatchMode($mode);
     }
+    /**
+     * Set the desired match mode.
+     *
+     * @param int $mode The matching mode to be used.
+     * 
+     * @return null
+     */
+    public function setSortMode($mode)
+    {
+        $this->_sphinx->setSortMode($mode);
+    }
 
     /**
      * Set limits on the range and number of results returned.
